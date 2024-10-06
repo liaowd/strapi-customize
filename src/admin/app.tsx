@@ -1,5 +1,6 @@
-// 仅仅是示范用，起作用的还得是旁边的app.tsx
 import type { StrapiApp } from '@strapi/strapi/admin';
+import AuthLogo from "./extensions/auth.png";
+import MenuLogo from "./extensions/menu.png";
 
 export default {
   config: {
@@ -31,6 +32,13 @@ export default {
       // 'zh-Hans',
       // 'zh',
     ],
+    // may use the admin account, refresh and save at global setting - overview
+    auth: { // Replace the Strapi logo in auth (login) views
+      logo: AuthLogo,
+    },
+    menu: { // Replace the Strapi logo in the main navigation
+      logo: MenuLogo,
+    },
   },
   bootstrap(app: StrapiApp) {
     console.log(app);
