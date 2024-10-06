@@ -29,9 +29,29 @@ export default {
       // 'tr',
       // 'uk',
       // 'vi',
-      // 'zh-Hans',
+      'zh-Hans',
       // 'zh',
     ],
+    translations: {
+      'zh-Hans': {
+        Users: 'Utilisateurs',
+        // "app.components.HomePage.welcome.again": "Hi Chloé!",
+        "app.components.LeftMenu.navbrand.title": "Dashboard 2222",
+        "app.components.LeftMenu.navbrand.workplace": "...",
+        'Auth.form.welcome.title': '欢迎登录网站后台',
+        'Auth.form.welcome.subtitle': '超级好用的cms',
+        'app.components.HomePage.welcomeBlock.content.again': '欢迎光临后台',
+      },
+      'en': {
+        Users: 'Utilisateurs',
+        // "app.components.HomePage.welcome.again": "Hi Chloé!",
+        "app.components.LeftMenu.navbrand.title": "Dashboard",
+        "app.components.LeftMenu.navbrand.workplace": "...",
+        'Auth.form.welcome.title': 'welcome to Admin',
+        'Auth.form.welcome.subtitle': ' Admin System is a Strapi-based admin system for managing Tusen data.',
+        'app.components.HomePage.welcomeBlock.content.again': 'Welcome to  Admin',
+      },
+    },    
     // may use the admin account, refresh and save at global setting - overview
     auth: { // Replace the Strapi logo in auth (login) views
       logo: AuthLogo,
