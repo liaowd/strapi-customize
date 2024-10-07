@@ -1,6 +1,8 @@
-import type { StrapiApp } from '@strapi/strapi/admin';
-import AuthLogo from "./extensions/auth.png";
-import MenuLogo from "./extensions/menu.png";
+import type { StrapiApp } from '@strapi/strapi/admin'
+import AuthLogo from "./extensions/auth.png"
+import MenuLogo from "./extensions/menu.png"
+// inject custom js 
+import './extensions/custom-homepage.js'
 
 export default {
   config: {
@@ -41,6 +43,7 @@ export default {
         'Auth.form.welcome.title': '欢迎登录网站后台',
         'Auth.form.welcome.subtitle': '超级好用的cms',
         'app.components.HomePage.welcomeBlock.content.again': '欢迎光临后台',
+        'global.localeToggle.label': '语言切换'
       },
       'en': {
         Users: 'Utilisateurs',
